@@ -49,7 +49,7 @@ const mycart= {
     }
 }
 
- myobject.cost=343;
+ myobject.cost=346;
  myobject.count=5;
  myobject.name='Computer';
 
