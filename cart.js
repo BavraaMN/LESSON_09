@@ -21,13 +21,13 @@ const mycart= {
 
     calculateItemPrice() {
        totalprice =0;
-       this.items.forEach(zxczxc=>(totalprice=totalprice+zxczxc.cost)); 
+       this.items.forEach ( zxczxc=> ( totalprice = totalprice + zxczxc.cost )); 
     },
 
     add: function(myobject) {
          this.items.push(myobject);
-         this.totalPrice=this.totalPrice+myobject.cost;
-         this.count=this.count+myobject.count;       
+         this.totalPrice=this.totalPrice + myobject.cost;
+         this.count=this.count + myobject.count;       
 
       },  
 
@@ -36,34 +36,34 @@ const mycart= {
     },  
 
     clear (){
-       this.items=[];
-       this.count=0,
-       this.cost=0,
+       this.items= [];
+       this.count= 0,
+       this.cost= 0,
        console.log('cleared');
     },
 
     print (){     // items.forEach()
       console.log('printing object: '+this.items);
 
-      console.log('printing json: '+JSON.stringify(this.items));
+      console.log('printing json: '+ JSON.stringify(this.items));
     }
 }
 
- myobject.cost=346;
- myobject.count=5;
- myobject.name='Computer';
+ myobject.cost = 346;
+ myobject.count = 5;
+ myobject.name = 'Computer';
 
  mycart.add(myobject);
 
- myobject.cost=2345;
- myobject.count=4;
- myobject.name='ebook reader';
+ myobject.cost = 2345;
+ myobject.count = 4;
+ myobject.name = 'ebook reader';
 
  mycart.add(myobject);
 
- myobject.cost=3456;
- myobject.count=23;
- myobject.name='smart phone';
+ myobject.cost = 3456;
+ myobject.count = 23;
+ myobject.name = 'smart phone';
 
  mycart.add(myobject);
 
